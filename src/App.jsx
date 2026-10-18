@@ -1,5 +1,5 @@
 import {
-  ArrowUpRight, Asterisk, CaretLeft, CaretRight, Cat,
+  ArrowUpRight, Asterisk, CaretLeft, CaretRight, Cat, GithubLogo,
   FilePdf, House,
 } from "@phosphor-icons/react";
 import { useState } from "react";
@@ -164,6 +164,7 @@ export function App() {
           <p>I am a machine learning engineer who turns complex technology into useful, understandable experiences. My work moves between LLM agents, retrieval systems, scientific computing, and user-facing products — always with a focus on reliability, clarity, and the people using what I build.</p>
           <p className="education-line">M.S. Computer Science, Northeastern University · B.S. Applied Mathematics, University of Washington</p>
           <a className="resume-link" href="/Shuwen-Wang-Resume.pdf" target="_blank" rel="noreferrer"><FilePdf weight="bold" /> VIEW FULL RESUME <ArrowUpRight weight="bold" /></a>
+          <a className="resume-link" href="https://github.com/shuwenhhh" target="_blank" rel="noreferrer"><GithubLogo weight="bold" /> GITHUB PROFILE <ArrowUpRight weight="bold" /></a>
         </div>
         <div className="experience-list">
           <article className="experience-item">
