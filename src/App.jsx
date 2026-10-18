@@ -194,7 +194,16 @@ export function App() {
           <p>I started as an ordinary programmer, with a quiet wish to build something of my own.</p>
           <p>So I began teaching myself AI, then game development. One unfamiliar idea, one broken prototype, one small breakthrough at a time. Slowly, the things I once thought were beyond me became things I could try.</p>
           <p>I'm still learning to become an independent developer. I don't have it all figured out. But with my cat beside me and a little more courage than yesterday, I'm making a world I can call my own.</p>
+          <div className="journey-games">
+            <p className="eyebrow">GAMES THAT INSPIRED ME</p>
+            <p className="game-titles">CELESTE <span>·</span> HOLLOW KNIGHT <span>·</span> RUSTY LAKE</p>
+            <p>At different moments in my life, these worlds gave me more than inspiration. They reminded me that it is okay to feel lost, that small steps still count, and that even in the quietest, hardest places, there can be beauty, comfort, and a way forward.</p>
+          </div>
           <p className="journey-signoff">A small plane. Two dreamers. A sky full of possibilities.</p>
+          <blockquote className="journey-quote">
+            <p>“The hymn of humanity is the hymn of courage! The greatness of humanity is the greatness of courage!”</p>
+            <cite>— JoJo's Bizarre Adventure</cite>
+          </blockquote>
         </div>
         <figure className="journey-illustration"><img src="/journey-flight.png" alt="Shuwen and her black-and-white cat flying together in a little pastel airplane among the stars" /></figure>
       </section></>}
