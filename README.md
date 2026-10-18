@@ -2,6 +2,8 @@
 
 A playful, hand-drawn personal portfolio built as a small interactive universe. The site combines a crayon-and-chalk visual style with selected AI projects, creative work, professional experience, and a photo gallery for my tuxedo cat.
 
+![Shuwen's Little Universe website preview](docs/site-preview.png)
+
 ## Highlights
 
 - Interactive planet navigation from a single-page home screen
