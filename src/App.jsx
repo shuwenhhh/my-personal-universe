@@ -192,7 +192,7 @@ export function App() {
           <p className="eyebrow">MY JOURNEY</p>
           <h2>LEARNING<br />TO <span>TAKE FLIGHT.</span></h2>
           <p>I started as an ordinary programmer, with a quiet wish to build something of my own.</p>
-          <p>So I began teaching myself AI, then game development. One unfamiliar idea, one broken prototype, one small breakthrough at a time. Slowly, the things I once thought were beyond me became things I could try.</p>
+          <p>So I began teaching myself AI from the ground up: how to build RAG systems that find the right knowledge, work with embeddings and vector search, and connect language models with tools to create helpful AI agents. Then I taught myself game development, too. One unfamiliar idea, one broken prototype, one small breakthrough at a time, the things I once thought were beyond me became things I could build.</p>
           <p>I'm still learning to become an independent developer. I don't have it all figured out. But with my cat beside me and a little more courage than yesterday, I'm making a world I can call my own.</p>
           <div className="journey-games">
             <p className="eyebrow">GAMES THAT INSPIRED ME</p>
