@@ -56,7 +56,6 @@ export function App() {
           <div className="hero-brand"><span className="brand-dot">S</span><span>SHUWEN'S<br /><small>LITTLE UNIVERSE</small></span></div>
           <h1>WELCOME TO<br />MY PLANET</h1>
           <p className="role-title"><span>AI</span> PRODUCT <em>BUILDER</em></p>
-          <p className="role-cn">AI PRODUCT NARRATIVE</p>
           <p className="hello-line">Hello, I'm Shuwen.</p>
           <p className="hero-tags">AI TECH — USER INSIGHT — CONTENT — BRAND</p>
           <nav className="planet-navigation" aria-label="Explore my planet">
