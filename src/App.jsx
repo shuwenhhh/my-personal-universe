@@ -190,7 +190,7 @@ export function App() {
       {view === "notes" && <><button className="subview-home light-back" onClick={() => openView("home")}><House weight="bold" /> BACK TO MY PLANET</button><section className="notes-section" id="notes">
         <div className="notes-copy">
           <p className="eyebrow">MY JOURNEY</p>
-          <h2>LEARNING<br />TO <span>TAKE FLIGHT.</span></h2>
+          <h2>LIFE IS FULL OF<br /><span>NEW ADVENTURES.</span></h2>
           <p>I started as an ordinary programmer, with a quiet wish to build something of my own.</p>
           <p>So I began teaching myself AI from the ground up: how to build RAG systems that find the right knowledge, work with embeddings and vector search, and connect language models with tools to create helpful AI agents. Then I taught myself game development, too. One unfamiliar idea, one broken prototype, one small breakthrough at a time, the things I once thought were beyond me became things I could build.</p>
           <p>I'm still learning to become an independent developer. I don't have it all figured out. But with my cat beside me and a little more courage than yesterday, I'm making a world I can call my own.</p>
