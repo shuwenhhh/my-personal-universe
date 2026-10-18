@@ -11,10 +11,13 @@ const catPhotos = [
   { src: "/cat-gallery/milk-cat-04.jpg", title: "NAP MODE", note: "Soft paws, green velvet, zero responsibilities." },
 ];
 
+const workProjects = ["AlphaEngine", "DigestTool", "PPTAgent"];
+
 export function App() {
   const [view, setView] = useState("home");
   const [activePhoto, setActivePhoto] = useState(0);
   const [catLaunching, setCatLaunching] = useState(false);
+  const [activeWorkProject, setActiveWorkProject] = useState(0);
   const [creativeProject, setCreativeProject] = useState(0);
 
   const openView = (nextView) => {
@@ -109,10 +112,17 @@ export function App() {
         <div className="ai-works-banner">
           <figure className="ai-works-scene">
             <img src="/ai-works-giant-laptop.png" alt="Tiny Shuwen and her tuxedo cat sitting together in front of a giant laptop beneath a crayon starry sky" />
-            <nav className="screen-project-links" aria-label="Featured GitHub projects">
-              <a href="https://github.com/Shuwenhhh/AlphaEngine" target="_blank" rel="noreferrer">AlphaEngine <ArrowUpRight weight="bold" /></a>
-              <a href="https://github.com/Shuwenhhh/DigestTool" target="_blank" rel="noreferrer">DigestTool <ArrowUpRight weight="bold" /></a>
-            </nav>
+            <div className="screen-project-links" aria-label="Featured GitHub projects">
+              <button
+                type="button"
+                onClick={() => setActiveWorkProject((activeWorkProject + 1) % workProjects.length)}
+                aria-label={`Showing ${workProjects[activeWorkProject]}. Click to show the next project.`}
+              >
+                <strong key={activeWorkProject}>{workProjects[activeWorkProject]}</strong>
+                <span>{String(activeWorkProject + 1).padStart(2, "0")} / {String(workProjects.length).padStart(2, "0")}</span>
+                <small>CLICK FOR NEXT PROJECT</small>
+              </button>
+            </div>
           </figure>
         </div>
       </section></>}
