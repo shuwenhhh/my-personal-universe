@@ -11,7 +11,11 @@ const catPhotos = [
   { src: "/cat-gallery/milk-cat-04.jpg", title: "NAP MODE", note: "Soft paws, green velvet, zero responsibilities." },
 ];
 
-const workProjects = ["AlphaEngine", "DigestTool", "PPTAgent"];
+const workProjects = [
+  { title: "AlphaEngine", url: "https://github.com/shuwenhhh/AlphaEngine" },
+  { title: "DigestTool", url: "https://github.com/shuwenhhh/DigestTool" },
+  { title: "PPTAgent", url: "https://github.com/shuwenhhh/PPTAgent" },
+];
 
 export function App() {
   const [view, setView] = useState("home");
@@ -113,15 +117,26 @@ export function App() {
           <figure className="ai-works-scene">
             <img src="/ai-works-giant-laptop.png" alt="Tiny Shuwen and her tuxedo cat sitting together in front of a giant laptop beneath a crayon starry sky" />
             <div className="screen-project-links" aria-label="Featured GitHub projects">
-              <button
-                type="button"
-                onClick={() => setActiveWorkProject((activeWorkProject + 1) % workProjects.length)}
-                aria-label={`Showing ${workProjects[activeWorkProject]}. Click to show the next project.`}
+              <a
+                className="screen-project-title"
+                href={workProjects[activeWorkProject].url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Open ${workProjects[activeWorkProject].title} on GitHub`}
               >
-                <strong key={activeWorkProject}>{workProjects[activeWorkProject]}</strong>
+                <strong key={activeWorkProject}>{workProjects[activeWorkProject].title}</strong>
+                <small>VIEW ON GITHUB <ArrowUpRight weight="bold" /></small>
+              </a>
+              <div className="screen-project-controls">
                 <span>{String(activeWorkProject + 1).padStart(2, "0")} / {String(workProjects.length).padStart(2, "0")}</span>
-                <small>CLICK FOR NEXT PROJECT</small>
-              </button>
+                <button
+                  type="button"
+                  onClick={() => setActiveWorkProject((activeWorkProject + 1) % workProjects.length)}
+                  aria-label="Show the next project"
+                >
+                  NEXT PROJECT <CaretRight weight="bold" />
+                </button>
+              </div>
             </div>
           </figure>
         </div>
