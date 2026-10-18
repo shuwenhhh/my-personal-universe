@@ -1,14 +1,8 @@
 import {
   ArrowUpRight, Asterisk, CaretLeft, CaretRight, Cat,
-  FilePdf, GithubLogo, Heart, House,
+  FilePdf, Heart, House,
 } from "@phosphor-icons/react";
 import { useState } from "react";
-const projects = [
-  { id: "catastrophe", stop: "01", city: "REYKJAVÍK", country: "ICELAND", title: "Catastrophe", type: "EXPERIMENTAL BUILD", description: "A project stop from my experimental GitHub journey — exploring how an ambitious idea becomes something concrete, testable, and shareable.", url: "https://github.com/Shuwenhhh/Catastrophe", position: { left: "9%", top: "58%" } },
-  { id: "pillmate", stop: "02", city: "TOKYO", country: "JAPAN", title: "PillMate", type: "SWIFTUI + AI HEALTH", description: "A native medication companion that helps people remember medicine, record how they feel, and turn personal health history into clear, privacy-conscious summaries.", url: "https://github.com/Shuwenhhh/PillMate", position: { left: "34%", top: "25%" } },
-  { id: "digesttool", stop: "03", city: "LISBON", country: "PORTUGAL", title: "DigestTool", type: "SLACK + PERSONALIZATION", description: "A personalized Slack digest prototype that ranks project updates by role, project phase, urgency, and adaptive thumbs-up or thumbs-down feedback.", url: "https://github.com/Shuwenhhh/DigestTool", position: { left: "61%", top: "52%" } },
-  { id: "alphaengine", stop: "04", city: "NEW YORK", country: "USA", title: "AlphaEngine", type: "MULTI-AGENT FINANCE", description: "An AI-powered stock analysis system combining quantitative signals, market data, and LLM reasoning across fundamental, technical, valuation, and news agents.", url: "https://github.com/Shuwenhhh/AlphaEngine", position: { left: "84%", top: "18%" } },
-];
 
 const catPhotos = [
   { src: "/cat-gallery/milk-cat-01.jpg", title: "SUNBEAM", note: "A tiny tongue, a very serious pose." },
@@ -21,7 +15,6 @@ export function App() {
   const [view, setView] = useState("home");
   const [activePhoto, setActivePhoto] = useState(0);
   const [catLaunching, setCatLaunching] = useState(false);
-  const [activeProject, setActiveProject] = useState(0);
   const [creativeProject, setCreativeProject] = useState(0);
 
   const openView = (nextView) => {
@@ -45,7 +38,7 @@ export function App() {
   const currentPhoto = catPhotos[activePhoto];
 
   return (
-    <main className={`site-shell view-${view}`}>
+    <main>
       {view === "home" && <section className="hero" id="home">
         <div className="meteor-field" aria-hidden="true">
           <img className="meteor meteor-one" src="/crayon-meteor.png" alt="" />
@@ -112,7 +105,7 @@ export function App() {
         </div>
       </section>}
 
-      {view === "work" && <><button className="subview-home light-back" onClick={() => openView("home")}><House weight="bold" /> BACK TO MY PLANET</button><section className="work-section travel-work" id="work">
+      {view === "work" && <><button className="subview-home light-back" onClick={() => openView("home")}><House weight="bold" /> BACK TO MY PLANET</button><section className="travel-work" id="work">
         <div className="ai-works-banner">
           <figure className="ai-works-scene">
             <img src="/ai-works-giant-laptop.png" alt="Tiny Shuwen and her tuxedo cat sitting together in front of a giant laptop beneath a crayon starry sky" />
