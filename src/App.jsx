@@ -184,7 +184,7 @@ export function App() {
 
       <section className="about-section" id="about">
         <div className="about-title"><span>ABOUT ME</span><h2>I DRAW IDEAS,<br />AND DESIGN PRODUCTS.</h2></div>
-        <div className="about-copy"><Cat weight="duotone" /><p>I build intelligent products at the intersection of engineering, research, and storytelling. From multi-agent financial analysis to computational drug discovery and automated presentation design, I enjoy making ambitious technical ideas feel clear, thoughtful, and genuinely useful.</p><a href="mailto:shuwenwang97@gmail.com">SHUWENWANG97@GMAIL.COM <ArrowUpRight weight="bold" /></a></div>
+        <div className="about-copy"><Cat weight="duotone" /><p>I build intelligent products at the intersection of engineering, research, and storytelling. From multi-agent financial analysis to computational drug discovery and automated presentation design, I enjoy making ambitious technical ideas feel clear, thoughtful, and genuinely useful.</p><a href="mailto:jessicayudok@gmail.com">JESSICAYUDOK@GMAIL.COM <ArrowUpRight weight="bold" /></a></div>
       </section></>}
 
       {view === "notes" && <><button className="subview-home light-back" onClick={() => openView("home")}><House weight="bold" /> BACK TO MY PLANET</button><section className="notes-section" id="notes">
