@@ -10,6 +10,8 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 ## Current visual direction
 
+- Journey is a minimal English personal story about self-teaching AI and game development while becoming an independent developer, with a crayon illustration of Shuwen and her tuxedo cat flying together in a small plane beside the text.
+
 - The home hero follows the supplied “WELCOME TO MY UNIVERSE” crayon poster: left-aligned tall hand lettering, compact bilingual role copy, four outlined pill links, and a large purple planet illustration on the right.
 - The site protagonist remains the cute short-haired little girl astronaut. A small black-and-white tuxedo/cow cat sits at her feet as her companion; the cat does not replace the girl.
 - The hero contains no dog, and all visible interface copy is English-only.

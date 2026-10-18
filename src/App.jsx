@@ -1,6 +1,6 @@
 import {
   ArrowUpRight, Asterisk, CaretLeft, CaretRight, Cat,
-  FilePdf, Heart, House,
+  FilePdf, House,
 } from "@phosphor-icons/react";
 import { useState } from "react";
 
@@ -188,12 +188,15 @@ export function App() {
       </section></>}
 
       {view === "notes" && <><button className="subview-home light-back" onClick={() => openView("home")}><House weight="bold" /> BACK TO MY PLANET</button><section className="notes-section" id="notes">
-        <div className="note-visual" aria-hidden="true"><div className="paper-sheet sheet-back"></div><div className="paper-sheet sheet-front"><span>NOTE 029</span><Heart weight="fill" /><p>TAKE IT SLOW.<br />YOU'RE STILL MOVING.</p></div></div>
         <div className="notes-copy">
-          <p className="eyebrow"><Asterisk weight="bold" /> LATEST NOTE</p><h2>COLLECTING<br /><span>LITTLE MOMENTS.</span></h2>
-          <p>I keep the things that do not quite fit inside a portfolio: a road, a cat, and the instant when a thought finally makes sense.</p>
-          <button className="primary-button light" onClick={() => alert("The notebook is still growing. Thanks for stopping by!")}>READ THE LATEST NOTE <ArrowUpRight weight="bold" /></button>
+          <p className="eyebrow">MY JOURNEY</p>
+          <h2>LEARNING<br />TO <span>TAKE FLIGHT.</span></h2>
+          <p>I started as an ordinary programmer, with a quiet wish to build something of my own.</p>
+          <p>So I began teaching myself AI, then game development. One unfamiliar idea, one broken prototype, one small breakthrough at a time. Slowly, the things I once thought were beyond me became things I could try.</p>
+          <p>I'm still learning to become an independent developer. I don't have it all figured out. But with my cat beside me and a little more courage than yesterday, I'm making a world I can call my own.</p>
+          <p className="journey-signoff">A small plane. Two dreamers. A sky full of possibilities.</p>
         </div>
+        <figure className="journey-illustration"><img src="/journey-flight.png" alt="Shuwen and her black-and-white cat flying together in a little pastel airplane among the stars" /></figure>
       </section></>}
     </main>
   );
