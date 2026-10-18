@@ -151,6 +151,7 @@ button:focus-visible, a:focus-visible, article:focus-visible { outline: 3px soli
 .notes-copy > p.game-titles { color: #f2d760; font-family: "Chalkboard SE", "Noteworthy", cursive; font-size: 15px; font-weight: 700; letter-spacing: .06em; margin: 0 0 10px; }
 .game-titles span { color: rgba(248, 240, 216, .6); padding: 0 5px; }
 .journey-games > p:last-child { color: rgba(248, 240, 216, .82); font-size: 14px; line-height: 1.8; max-width: 520px; margin: 0; }
+.journey-games > p.wonders-line { margin: 12px 0 0; color: #fff5d8; font-family: "Noteworthy", "Chalkboard SE", cursive; font-size: 17px; line-height: 1.5; }
 .journey-quote { margin: 24px 0 0; padding-left: 16px; border-left: 2px solid var(--yellow); }
 .journey-quote p { margin: 0; color: #fff5d8; font-family: "Noteworthy", "Chalkboard SE", cursive; font-size: 15px; line-height: 1.65; }
 .journey-quote cite { display: block; margin-top: 8px; color: rgba(248, 240, 216, .65); font-size: 11px; font-style: normal; letter-spacing: .08em; text-transform: uppercase; }

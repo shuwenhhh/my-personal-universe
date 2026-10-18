@@ -197,7 +197,8 @@ export function App() {
           <div className="journey-games">
             <p className="eyebrow">GAMES THAT INSPIRED ME</p>
             <p className="game-titles">CELESTE <span>·</span> HOLLOW KNIGHT <span>·</span> RUSTY LAKE</p>
-            <p>At different moments in my life, these worlds gave me more than inspiration. They reminded me that it is okay to feel lost, that small steps still count, and that even in the quietest, hardest places, there can be beauty, comfort, and a way forward.</p>
+            <p>At different moments in my life, these worlds gave me more than inspiration. Even in the hardest places, there can still be beauty, comfort, and a way forward.</p>
+            <p className="wonders-line">All tragedy erased. I see only wonders...</p>
           </div>
           <p className="journey-signoff">A small plane. Two dreamers. A sky full of possibilities.</p>
           <blockquote className="journey-quote">
